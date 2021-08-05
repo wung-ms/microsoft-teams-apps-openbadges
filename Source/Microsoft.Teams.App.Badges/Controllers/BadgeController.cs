@@ -179,7 +179,7 @@ namespace Microsoft.Teams.App.Badges.Controllers
                     conversationReference,
                     async (context, token) =>
                     {
-                        var teamsChannelAccounts = await this.teamMemberCacheHelper.GetTeamMembersInfoAsync(context, teamId, token);
+                        var teamsChannelAccounts2 = await this.teamMemberCacheHelper.GetTeamMembersInfoAsync(context, teamId, token);
                     },
                     default);
 
