@@ -173,6 +173,7 @@ namespace Microsoft.Teams.App.Badges.Controllers
                     ChannelId = teamId,
                     ServiceUrl = userClaims.ServiceUrl,
                 };
+                this.logger.LogError(teamsChannelAccounts.ToString(), "WUNG Info");
 
                 await this.botAdapter.ContinueConversationAsync(
                     this.appId,
@@ -187,6 +188,7 @@ namespace Microsoft.Teams.App.Badges.Controllers
             }
             catch (Exception ex)
             {
+                this.logger.LogError("WUNG Info3");
                 this.logger.LogError(ex, "Error occurred while getting team member list.");
                 throw;
             }
