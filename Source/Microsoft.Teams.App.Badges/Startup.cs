@@ -87,6 +87,7 @@ namespace Microsoft.Teams.App.Badges
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                IdentityModel.Logging.IdentityModelEventSource.ShowPII = true;
             }
             else
             {
