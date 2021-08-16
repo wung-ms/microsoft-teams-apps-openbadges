@@ -92,6 +92,7 @@ namespace Microsoft.Teams.App.Badges
             else
             {
                 app.UseHsts();
+                IdentityModel.Logging.IdentityModelEventSource.ShowPII = true;
             }
 
             app.UseHttpsRedirection();
