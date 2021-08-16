@@ -356,7 +356,7 @@ class AwardBadge extends React.Component<IBadgesProps, IState>
    *  Returns layout for award badge.
    * */
     showAwardBadge = (): JSX.Element | undefined => {
-        const criteriaText = this.badgeCriteria != undefined ? this.badgeCriteria + (this.badgeCriteriaUrl != undefined ? " Url:" + this.badgeCriteriaUrl : '') : "Url: " + this.badgeCriteriaUrl;
+        const criteriaText = this.badgeCriteria !== undefined ? this.badgeCriteria + (this.badgeCriteriaUrl !== undefined ? " Url:" + this.badgeCriteriaUrl : '') : "Url: " + this.badgeCriteriaUrl;
 
         return (
             <div className="container-subdiv" style={{ padding: "1rem" }}>
